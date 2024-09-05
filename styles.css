@@ -1,0 +1,370 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #FF8C00;
+    /* Orange color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.phone-input {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-input select {
+    width: 20%;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-buttons label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.image-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    height: 100px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save {
+    background-color: #28a745;
+    /* Green */
+}
+
+.update {
+    background-color: #ffc107;
+    /* Yellow */
+}
+
+.delete {
+    background-color: #dc3545;
+    /* Red */
+}
+
+.search {
+    background-color: #007bff;
+    /* Blue */
+}
+
+.reset {
+    background-color: #6c757d;
+    /* Gray */
+}
+
+.output-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+}
+
+.output-container h3 {
+    text-align: center;
+    color: #FF8C00;
+    /* Orange color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th input,
+th select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Flexbox styling to place checkbox and button side by side */
+.thumbscan-group {
+    display: flex;
+    align-items: flex-start; /* Vertically center items */
+}
+
+.thumbscan-controls {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    margin-left: 10px; /* Space between label and controls */
+}
+
+.thumbscan-controls input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and button */
+}
+
+/* Style for the thumb scan button */
+.thumbscan-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Padding for the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Inline-block for proper spacing */
+    font-size: 14px; /* Set font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.thumbscan-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#template {
+    display: none;
+    
+}
+
+ 
+.card-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid #00a651; /* Default border color, will be overridden by JS */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 245px; /* Width adjusted for 4 cards per row */
+    height: 388px; /* Height adjusted for 4 cards per row */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+.header {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-family: math;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: -30px;
+    position: relative;
+}
+
+.title span {
+    font-size: 18px;
+    position: absolute;
+    top: 8px;
+    right: -6px;
+    color: white;
+    background-color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    font-family: math;
+    margin-left: 130px;
+}
+
+.date {
+    font-size: 20px;
+    margin: 5px 0px 5px 0;
+    font-weight: 800;
+    font-family: math;
+}
+
+.duty-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.photo-box {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.badge-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.badge1 {
+    padding: 3px 8px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.badge2 {
+    background-color: #00a651;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form input {
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.last-field {
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: right;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.disclaimer {
+    font-size: 8px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 5px;
+    font-weight: 800;
+}
